@@ -24,12 +24,14 @@
     color:black;
     background-color: white;
     border-style: solid;
+   
 }
 
 .button2 {
     background-color: black;
     color: #66FCF1;
     border-radius: 5px;
+    width: 100%;
 }
 
 .bg-container {
