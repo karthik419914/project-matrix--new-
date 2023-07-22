@@ -89,3 +89,19 @@
             display:block;
           
 }
+body, html {
+    height: 100%;
+  }
+  
+  .bg-new {
+    /* The image used */
+    background-image: url("images/1st\ image.png");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
