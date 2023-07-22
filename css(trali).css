@@ -109,3 +109,10 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+
+  .heading-1{
+    text-align: center ; 
+    font-family: 'Courier New', Courier, monospace;  
+    font-weight: bolder; 
+  }
