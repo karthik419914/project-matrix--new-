@@ -116,3 +116,10 @@ body, html {
     font-family: 'Courier New', Courier, monospace;  
     font-weight: bolder; 
   }
+
+  .dropdown-btn{
+    background-color: white; border-style: solid;
+    font-family: 'Courier New', Courier, monospace;
+    border-style: solid;
+    
+  }
