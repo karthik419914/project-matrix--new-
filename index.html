@@ -178,7 +178,8 @@ function filterFunction() {
                 </a>
    
              <div class="dropdown-menu"    style=" color: black; background-color: white; font-family: 'Courier New', Courier, monospace; font-weight: bold; width: fit-content; height: fit-content; font-size: 40px;"  aria-labelledby="dropdownMenuLink">
-                 <a class="dropdown-item "  style=" color: black; background-color: white; font-family: 'Courier New', Courier, monospace; font-weight: bold;" onclick="display('section-bgr')" >Ground Floor</a>
+              <a class="dropdown-item "  style=" color: black; background-color: white; font-family: 'Courier New', Courier, monospace; font-weight: bold;" onclick="display('section-bas')" >Basement</a>   
+              <a class="dropdown-item "  style=" color: black; background-color: white; font-family: 'Courier New', Courier, monospace; font-weight: bold;" onclick="display('section-bgr')" >Ground Floor</a>
                  <a class="dropdown-item "  style=" color: black; background-color: white; font-family: 'Courier New', Courier, monospace; font-weight: bold;" onclick="display('section-b1')" >1st floor</a>
                  <a class="dropdown-item "    style=" color: black; background-color: white; font-family: 'Courier New', Courier, monospace; font-weight: bold;" onclick="display('section-b2')" >2nd floor</a>
                  <a class="dropdown-item "  style=" color: black; background-color: white; font-family: 'Courier New', Courier, monospace; font-weight: bold;" onclick="display('section-b3')" >3nd floor</a>
@@ -238,8 +239,8 @@ function filterFunction() {
     
    
           <h1    style="text-align: center ; margin-top: 70px;" class="font1">Events Section</h1>
-          <div class="main-bg1">
-              <div class=" d-flex flex-column justify-content-end" style="margin-left: 20px; margin-bottom: 300px;">
+          <div class="main-bg1" >
+              <div class=" d-flex flex-column justify-content-end" style="margin-left: 20px; ">
                    
                   
 
@@ -280,24 +281,24 @@ function filterFunction() {
       
                 </div>
                    
-               
+                <div class="dropdown d-flex flex-column justify-content-start" style="margin-bottom: 1000px;">
+                  <button onclick="myFunction()" class="dropbtn">Search</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="#about" onclick="display('section-bas')">physics lab</a>
+                    <a href="#base" onclick="display('section-bas')">chemistry lab</a>
+                    <a href="#blog" onclick="display('section-a1')">python lab</a>
+                    <a href="#contact" onclick="display('section-a1')">caed lab</a>
+                    <a href="#custom" onclick="display('section-bas')">CSD Department</a>
+                    <a href="#support" onclick="display('section-bgr')">Support</a>
+                    <a href="#tools" onclick="display('section-bgr')">Tools</a>
+                  </div>
+                </div>
+        
          
               </div>
               
-              <div class="dropdown d-flex flex-row justify-content-left">
-                <button onclick="myFunction()" class="dropbtn">Search</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-                  <a href="#about" onclick="display('section-bgr')">physics lab</a>
-                  <a href="#base" onclick="display('section-bgr')">chemistry lab</a>
-                  <a href="#blog" onclick="display('section-bgr')">phython lab</a>
-                  <a href="#contact" onclick="display('section-bgr')">caed lab</a>
-                  <a href="#custom" onclick="display('section-bgr')">CSD lab</a>
-                  <a href="#support" onclick="display('section-bgr')">Support</a>
-                  <a href="#tools" onclick="display('section-bgr')">Tools</a>
-                </div>
-              </div>
-      
+              
     </div>
     
    
@@ -330,7 +331,13 @@ function filterFunction() {
     
     
    
-
+      <div id="section-bas">
+        <h1    class="heading-1">B-block <br> basement</h1>
+        <img src="images/common basement.png"height="" width="100%">
+           
+                 <button class="button2"  onclick="display('section-main')">back</button>
+            
+        </div>
      
     <div id="section-bgr">
     <h1    class="heading-1">B-block <br> ground floor</h1>
