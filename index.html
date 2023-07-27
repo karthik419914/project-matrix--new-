@@ -49,7 +49,8 @@
 
 
     <div id="section-main" class="bg">
-        <div class="ready d-flex flex-column justify-content-end">
+        <div class=" d-flex flex-column justify-content-end" >
+            <img src="images/main-image.jpg" width="100%" height=""> 
             <a href='https://dsatm.edu.in/' class="d-flex flex-row justify-content-right">
               <button class="btn font1" style="margin-bottom: 8px; margin-right: 8px; font-weight: bold; " >
                 learn more
@@ -207,7 +208,7 @@
    
           <h1    style="text-align: center ; margin-top: 70px;" class="font1">Events Section</h1>
           <div class="main-bg1">
-              <div class=" d-flex flex-column justify-content-end">
+              <div class=" d-flex flex-column justify-content-end" style="margin-left: 20px;">
                    
                   
 
@@ -217,7 +218,7 @@
                   </div>  
                   
                    <div style="margin-top: 30px;">
-                    <button  class="btn" style="font-family: 'Courier New', Courier, monospace; width: fit-content; height: fit-content; font-size: 40px; " onclick="display('section')" >Technical</button>
+                    <button  class="btn" style="font-family: 'Courier New', Courier, monospace; width: fit-content; height: fit-content; font-size: 40px; " onclick="display('section-technical')" >Technical</button>
                        <p style="text-align: left;"> </p>
                   </div>  
                        <p1 style="margin: 10px;"></p1>
@@ -227,10 +228,17 @@
                       <button  class="btn" style="font-family: 'Courier New', Courier, monospace; width: fit-content; height: fit-content; font-size: 40px;" onclick="display('section-cultural')" >Cultural</button>
                       <p style="text-align: left;">  </p>
                  </div>  
-                 <div>
+                 <div style="margin-bottom: 120px; margin-top: 30px; border-style: solid; border-radius: 5px;" > 
                   
-                  <h1 style="font-family: 'Courier New', Courier, monospace;">upcomming events</h1>
-                 
+                  <h1 style="font-family: 'Courier New', Courier, monospace; ">upcomming events</h1>
+                  <ul class="font1" style="text-align: left;font-size: 28px; margin-left: 50px;">
+                    <li onclick="display('section-updates')">Antharagni</li>
+                    <li onclick="display('section-updates')">Esparanza</li>
+                    <li onclick="display('section-updates')">Brahmi-Kannada rajyotsav</li>
+                    <li onclick="display('section-mc')">Codecraft:Math Edition(1-8-23)</li>
+                  </ul>
+ 
+                   
              
                </div>  
                 </div>
@@ -361,12 +369,45 @@
       <h1 class="heading-1"></h1>
       <img src="images/e-day.png" height="" width="100%">
       <img src="images/mr-mse.png" height="" width="100%">
+      <img src="images/esparanza.png" height="" width="100%">
+      <img src="images/es1.jpg" height="" width="100%">
       
         
              <button class="button2"  onclick="display('section-main')">back</button>
         
     </div>
     
+    <div id="section-technical">
+      
+      <h1 class="heading-1"></h1>
+      <img src="images/bytestrom.png" height="" width="100%">
+      <img src="images/mc.png" height="" width="100%">
+      
+        
+             <button class="button2"  onclick="display('section-main')">back</button>
+        
+    </div>
+    
+    
+    <div id="section-updates">
+      
+      <h1 class="heading-1">no updates</h1>
+      
+        
+             <button class="button2"  onclick="display('section-main')">back</button>
+        
+    </div>
+
+    <div id="section-mc">
+      
+      <h1 class="heading-1"></h1>
+      <img src="images/mc.png" height="" width="100%">
+      
+      
+        
+             <button class="button2"  onclick="display('section-main')">back</button>
+        
+    </div>
 
     <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
   </body>
