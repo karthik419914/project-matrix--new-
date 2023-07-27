@@ -26,16 +26,20 @@
     border-style: solid;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    
    
 }
 
 .button2 {
-    background-color: black;
+    background-color:black;
     color: #66FCF1;
     border-radius: 5px;
-    width: 100%;
+    width:100%;
+    height: fit-content;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    font-size: 50px;
+    margin-top: 30px;
 }
 
 .bg-container {
@@ -149,4 +153,24 @@ body, html {
     width: auto;
     height: 100%;
   }
- 
+ .btn-2{
+  height: fit-content;
+  width: fit-content;
+  font-size: px;
+  
+ }
+ .list-style{
+  border-style: solid; 
+  border-radius: 8px; 
+  width: fit-content; 
+  height: fit-content; 
+  padding: 10px; 
+  margin: 10px;
+ }
+ .events-btn{
+  font-family: 'Courier New', Courier, monospace; 
+  width: fit-content; 
+  height: fit-content; 
+  font-size: 40px;
+  font-weight: bolder; 
+}
