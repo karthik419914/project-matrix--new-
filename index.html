@@ -18,6 +18,28 @@
              
         }
     </script>
+
+<script>
+  function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+  </script>
 </head>
 
 <body >
@@ -29,16 +51,16 @@
             <div style="margin-left: auto;">
                  <button class="button2 " style="width:1260px; " onclick="display('section-main')">enter</button>
            </div>
-          </div>
+         
 
     
        
 
+          
 
 
 
-
-
+        </div>
 
 
 
@@ -217,7 +239,7 @@
    
           <h1    style="text-align: center ; margin-top: 70px;" class="font1">Events Section</h1>
           <div class="main-bg1">
-              <div class=" d-flex flex-column justify-content-end" style="margin-left: 20px;">
+              <div class=" d-flex flex-column justify-content-end" style="margin-left: 20px; margin-bottom: 300px;">
                    
                   
 
@@ -258,9 +280,23 @@
       
                 </div>
                    
-         </div>
-
+               
          
+              </div>
+              
+              <div class="dropdown d-flex flex-row justify-content-left">
+                <button onclick="myFunction()" class="dropbtn">Search</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                  <a href="#about" onclick="display('section-bgr')">physics lab</a>
+                  <a href="#base" onclick="display('section-bgr')">chemistry lab</a>
+                  <a href="#blog" onclick="display('section-bgr')">phython lab</a>
+                  <a href="#contact" onclick="display('section-bgr')">caed lab</a>
+                  <a href="#custom" onclick="display('section-bgr')">CSD lab</a>
+                  <a href="#support" onclick="display('section-bgr')">Support</a>
+                  <a href="#tools" onclick="display('section-bgr')">Tools</a>
+                </div>
+              </div>
       
     </div>
     
