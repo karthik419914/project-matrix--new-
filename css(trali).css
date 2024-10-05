@@ -298,7 +298,34 @@ header h2 {
 body, html {
     height: 100%;
   }
-  
+  body {
+   
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+   
+    overflow: hidden; /* Hide overflow during loading */
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black; /* Semi-transparent background */
+    display: flex;
+    justify-content: center; /* Center loading image horizontally */
+    align-items: center; /* Center loading image vertically */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.loading-overlay img {
+     /* Adjust width as needed */
+    height: 100%; /* Maintain aspect ratio */
+}
+
+
+
   .bg-new {
     /* The image used */
     background-image: url("images/1st\ image.png");

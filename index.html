@@ -45,12 +45,8 @@
         </script>
     </head>
     <body >
-        <div id="section1" class="newimage">
-            <img src="images/inovative idea.jpg" height="" width="100%">
-            <img src="images/title.png" height="" width="100%">
-            <div >
-                <button class="button2 "   onclick="display('section-main')">enter</button>
-            </div>
+        <div id="loading" class="loading-overlay">
+            <img src="loading.gif" alt="Loading..." />
         </div>
         <div id="section-main" class="bg">
             <div class=" d-flex flex-column justify-content-end" >
@@ -518,6 +514,16 @@
             return result.response.text();
             }
         </script>
+<script>
+    window.onload = function() {
+        setTimeout(function() {
+            document.getElementById('loading').style.display = 'none';
+            document.body.style.overflow = 'auto'; // Enable scrolling after loading
+        }, 4000); // 6000 milliseconds = 6 seconds
+    };
+
+    
+</script>
 
         <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
     </body>
